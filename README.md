@@ -1,11 +1,16 @@
 # 소개
 
-이 시스템은 Github에 올릴 목적의 프로젝트를 빠르게 만들기 위함임.
+
+용량이 큰 이미지 파일 업로드 시에 발생한 문제들을 어떻게 해결했는지 작성했습니다.<br/>
+현재 시스템은 어떻게 구성했는지 Frontend만 구성했어요.<br/>
+실제 Upload 컴포넌트 확인을 위해서는 [여기](https://github.com/letitbe1334/compress-upload-project-github)를 방문해주세요.
 
 ## Project Setup
 
 ```sh
+yarn set version berry
 yarn
+yarn dlx @yarnpkg/sdks vscode
 ```
 
 ### Compile and Hot-Reload for Development
@@ -18,29 +23,4 @@ yarn local
 
 ```sh
 yarn build
-```
-
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-yarn build
-
-# Runs the end-to-end tests
-yarn test:e2e
-# Runs the tests only on Chromium
-yarn test:e2e --project=chromium
-# Runs the tests of a specific file
-yarn test:e2e tests/example.spec.ts
-# Runs the tests in debug mode
-yarn test:e2e --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
 ```
